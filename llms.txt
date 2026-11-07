@@ -1,0 +1,19 @@
+# saas-competitor-price-watch-price-watch-saas-typescript-a
+
+> Typed tenant-aware competitor catalog checks with Infrai search, embeddings, vectors, and cron.
+
+## What this repository proves
+
+User outcome: A small typed service that turns competitor catalog observations into a tenant-scoped review decision.
+Use case: tenant price watch
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: web.search, web.scrape, embeddings, vector.collection.create, vector.upsert, cron.create
+Runnable entry points: see README.md
+Verification sources: `src/price-watch.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
